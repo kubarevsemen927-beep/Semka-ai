@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semka AI — премиальный помощник</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="topbar">
+  <button id="menuBtn" class="menu-btn" title="История чатов">
+    <span class="bars"><span></span><span></span><span></span></span>
+  </button>
+  <div class="logo">✦ SEMKA AI ✦</div>
+</div>
+
+<aside id="sidebar">
+  <button id="newChatBtn" class="new-chat">＋ Новый чат</button>
+  <div id="chatList" class="chat-list"></div>
+  <div id="storageWarn" class="warn hidden">Этот браузер не сохраняет чаты для локальных файлов. Используйте кнопки ниже.</div>
+  <div class="side-buttons">
+    <button id="saveBtn" class="side-btn">💾 Сохранить чаты</button>
+    <button id="loadBtn" class="side-btn">📂 Загрузить</button>
+    <input type="file" id="loadFile" accept=".json" class="hidden">
+  </div>
+</aside>
+
+<div id="overlay"></div>
+
+<main id="chatBox">
+  <div id="messages" class="messages">
+    <div id="hero" class="hero">
+      <div class="hero-logo">✦ SEMKA AI ✦</div>
+      <div class="hero-text">Напиши первое сообщение — и начнём разговор</div>
+    </div>
+  </div>
+  <div class="input-area">
+    <textarea id="input" rows="1" placeholder="Напиши сообщение…"></textarea>
+    <button id="sendBtn" title="Отправить">➤</button>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
